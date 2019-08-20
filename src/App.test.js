@@ -1,9 +1,12 @@
+// react-testing-library renders your components to document.body,
+// this adds jest-dom's custom assertions
+import '@testing-library/jest-dom/extend-expect';
+
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from '@testing-library/react';
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+it('render App', () => {
+  const { getByText } = render(<App />);
+  expect(getByText('Technical test')).toBeInTheDocument();
 });

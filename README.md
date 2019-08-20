@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ibiza technical test
+
+Instructions are [here](https://gist.github.com/lfalorni/9359cbb7b9ba53a4dc35b092ab0729ff)
 
 ## Available Scripts
 
